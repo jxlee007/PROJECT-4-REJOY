@@ -144,9 +144,34 @@ loader();
 // -------------
 
 openNav = () =>{
-    document.getElementById('menu').style.height = "75vh";
+    document.getElementById('menu').style.height = "70vh";
+    document.getElementById('menu').style.zIndex = "70";
+    document.getElementById('menu').style.opacity = "1";
+
 }
 
 closeNav = () =>{
     document.getElementById('menu').style.height = "0";
+    document.getElementById('menu').style.opacity = "0";
+    document.getElementById('menu').style.zIndex = "0";
+
 }
+// ---------------
+animpage6 = () =>{
+    gsap.from("footer h1 span",{
+        y: -100,
+        stagger: .25,
+        opacity:0,
+        duration: .8,
+     // delay: 1,
+        scrollTrigger: {
+            trigger: "footer",
+            scroller: "#main",
+            start: "top 17%",
+            end: "top 20%",
+            // markers: "true",
+            scrub: 2,
+        }
+    })
+}
+animpage6()

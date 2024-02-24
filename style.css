@@ -9,19 +9,20 @@
     src: url(./Rejouice-Headline.woff2);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: nb ,serif;
+    font-family: nb, serif;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-#loader{
+#loader {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,11 +36,12 @@ html,body{
     z-index: 99;
 }
 
-#loader h3{
+#loader h3 {
     font-size: 2vw;
 }
 
-#menu{
+#menu {
+    padding: 2vw 3vw .5vw;
     background-color: #ff5f38;
     /* display: none; */
     display: flex;
@@ -49,34 +51,30 @@ html,body{
     transition: 0.7s;
     overflow-y: hidden;
     position: absolute;
-    z-index: 80;
+    z-index: 0;
 
 }
 
-#menu span{
-    margin: 1vw 3vw;
-}
-
-#up{
+#up {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#up h2{
+#up h2 {
     font-size: 1.6vw;
     font-weight: 500;
     cursor: pointer;
     font-family: 'headline';
 }
 
-#up h4{
+#up h4 {
     font-size: 1.5vw;
     font-weight: 200;
     cursor: pointer;
 }
 
-#mid{
+#mid {
     display: flex;
     justify-content: flex-start;
     gap: 20vw;
@@ -85,37 +83,38 @@ html,body{
     border-bottom: 1px solid black;
 }
 
-#mid video{
+#mid video {
     border-radius: 5px;
     width: 100%;
 }
 
-#play{
+#play {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 35%;
 }
 
-#play span{
+#play span {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
 }
 
-#play h4{
+#play h4 {
     font-size: 1.3vw;
     font-weight: 100;
     margin-bottom: 45px;
 }
 
-#mid span:nth-child(3){
+#mid span:nth-child(3) {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-#menuelem{
+#menuelem {
     /* margin-bottom: 0px; */
     display: flex;
     flex-direction: column;
@@ -125,24 +124,24 @@ html,body{
     position: relative;
 }
 
-.txtdiv{
+.txtdiv {
     height: 8vh;
     overflow: hidden;
     z-index: 12;
     /* background-color: aqua; */
 }
 
-#menuelem h1{
+#menuelem h1 {
     font-size: 3.5vw;
     font-weight: 300;
     transition: all ease-out .3s;
 }
 
-#menuelem:hover h1{
+#menuelem:hover h1 {
     transform: translateY(-100%);
 }
 
-#mid button{
+#mid button {
     display: block;
     margin-top: 2vw;
     border: 1px solid black;
@@ -151,37 +150,37 @@ html,body{
     border-radius: 50px;
     background-color: transparent;
     transition: .3s;
-
+    color: #000;
 }
 
-.fill:hover,
-.fill:focus {
-  box-shadow: inset 0 -3.25em 0 0 #000;
-  color: #ff5f38;
+#mid button:hover,
+#mid button:focus {
+    box-shadow: inset 0 -3.25em 0 0 #000;
+    color: #ff5f38;
 }
 
-#low{
+#low {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: .5vw;
 }
 
-#low a{
+#low a {
     text-decoration: none;
     color: #000;
 }
 
 
-#page1{
+#page1 {
     /* background-color: red; */
     height: 100vh;
     width: 100%;
     position: relative;
-    
+
 }
 
-#cursor{
+#cursor {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,15 +194,15 @@ html,body{
     opacity: 0;
 }
 
-#page1 video{
+#page1 video {
     height: 100%;
     width: 100%;
     object-fit: cover;
     position: absolute;
-    
+
 }
 
-.page-content{
+.page-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -216,7 +215,7 @@ html,body{
     color: antiquewhite;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -226,12 +225,12 @@ nav{
     padding: 2vw 3vw;
 }
 
-nav h3{
+nav h3 {
     font-size: 1.5vw;
     font-weight: 200;
 }
 
-nav h4{
+nav h4 {
     font-size: 1.3vw;
     font-weight: 300;
     cursor: pointer;
@@ -239,7 +238,7 @@ nav h4{
 
 
 
-.page-content h1 span{
+.page-content h1 span {
     font-family: headline;
     font-weight: 100;
     font-size: 25vw;
@@ -248,7 +247,7 @@ nav h4{
 }
 
 
-#page2{
+#page2 {
     height: 100vh;
     width: 100%;
     /* background-color: blueviolet; */
@@ -256,7 +255,7 @@ nav h4{
     padding: 5vw 2.8vw;
 }
 
-#page2-top{
+#page2-top {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -265,52 +264,88 @@ nav h4{
     border-bottom: 1px solid black;
 }
 
-#page2-top h3{
+#page2-top h3 {
     font-size: 1.7vw;
     font-weight: 500;
     width: 26%;
 }
 
-#page2-top h4{
+#page2-top h4 {
     font-size: 1.7vw;
     font-weight: 500;
 }
 
-.elem{
+.elem {
     overflow: hidden;
 }
 
-.elem h1{
+.elem h1 {
     font-size: 4.2vw;
     font-weight: 500;
 }
 
-#page3{
+#page3 {
     min-height: 100vh;
     width: 100%;
     position: relative;
     padding: 3vw;
 }
 
-.page3-top{
+.page3-top {
     /* background-color: red; */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.page3-top h2{
+.page3-top h2 {
     font-size: 4vw;
-    font-weight: 100;
-    text-decoration: underline;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 2px;
+    background: linear-gradient(90deg, black, black);
+    background-size: 100% 3px;
+    background-position-x: 0%;
+    background-position-y: calc(100% - 1px);
+    background-repeat: no-repeat;
 
+    &:hover {
+        animation-name: underlineHover;
+        animation-duration: .4s;
+        animation-timing-function: ease-in-out;
+    }
 }
 
-.page3-top h4{
+@keyframes underlineHover {
+    0% {
+        background-position-x: 100%;
+        background-size: 100% 3px;
+    }
+
+    50% {
+        background-position-x: 100%;
+        background-size: 0% 3px;
+    }
+
+    51% {
+        background-position-x: 0%;
+        background-size: 0% 3px;
+    }
+
+    100% {
+        background-position-x: 0%;
+        background-size: 100% 3px;
+    }
+}
+
+.page3-top h4 {
     margin-bottom: 1vw;
     font-size: 1vw;
     font-weight: 500;
 }
 
-.page3-top h4 span{
+.page3-top h4 span {
     font-size: .7vw;
     background-color: black;
     color: #fff;
@@ -319,7 +354,7 @@ nav h4{
     border-radius: 10px;
 }
 
-.page3-elem{
+.page3-elem {
     display: flex;
     flex-direction: column;
     height: 85vh;
@@ -328,35 +363,36 @@ nav h4{
     margin-top: 8vw;
 }
 
-.page3-elem h3{
+.page3-elem h3 {
     font-size: 1.7vw;
     font-weight: 100;
     margin: 1vw 0vw;
 }
 
-.page3-elem .box-elem{
+.page3-elem .box-elem {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.page3-elem .box-elem .box{
+.page3-elem .box-elem .box {
     height: 100%;
     width: 32.5%;
     position: relative;
     transition: all linear 0.8s;
     /* background-color: blue; */
 }
-.page3-elem .box-elem .box video{
+
+.page3-elem .box-elem .box video {
     height: 100%;
     width: 100%;
     /* background-color: blue; */
     object-fit: cover;
     object-position: center;
-    
+
 }
 
-.page3-elem .box-elem .box img{
+.page3-elem .box-elem .box img {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -364,11 +400,11 @@ nav h4{
     transition: .3s;
 }
 
-.page3-elem .box-elem .box:hover img{
+.page3-elem .box-elem .box:hover img {
     opacity: 0;
 }
 
-#page4{
+#page4 {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -378,24 +414,24 @@ nav h4{
     position: relative;
 }
 
-#page4 video{
+#page4 video {
     height: 100%;
-    
+
 }
 
-#page4 svg{
+#page4 svg {
     position: absolute;
     height: 60%;
 }
 
-#page5{
+#page5 {
     height: 100vh;
     width: 100%;
     padding: 4vw 0;
     position: relative;
 }
 
-#page5 h1{
+#page5 h1 {
     width: 96%;
     margin-left: 2%;
     font-family: headline;
@@ -404,7 +440,7 @@ nav h4{
     border-bottom: 1px solid #cecece;
 }
 
-.sd{
+.sd {
     height: 60vh;
     width: 100%;
     /* background-color: #ff5f38; */
@@ -437,5 +473,114 @@ nav h4{
     margin-right: auto;
 }
 
+footer {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    padding: 1vw 4vw;
+    position: relative;
+    color: #fff;
+}
 
 
+.foot-top {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45%;
+    margin-bottom: 1vw;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.right {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+
+}
+
+.right a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 1vw;
+}
+
+.right div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10vw;
+}
+
+.right div span {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+button {
+    display: block;
+    margin-top: 2vw;
+    border: 1px solid white;
+    font-size: 1.2vw;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: .3s;
+    color: #fff;
+}
+
+.fill:hover,
+.fill:focus {
+    box-shadow: inset 0 -3.25em 0 0 #fff;
+    color: #000;
+}
+
+footer h1 span {
+    font-family: headline;
+    font-weight: 100;
+    font-size: 25vw;
+    line-height: 25vw;
+    display: inline-block;
+    /* transition: .2s; */
+}
+
+        
+    /* Create the underline */
+    .underline5 {
+        position: relative;
+        width: fit-content;
+        display: inline-block;
+        padding-bottom: 5px;
+        transition: padding-bottom 0.3s ease-in-out;
+        }
+
+        /* Create the sliding effect */
+        .underline5::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: currentColor;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect - out */
+        .underline5:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+        }
