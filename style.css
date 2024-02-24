@@ -361,6 +361,7 @@ nav h4{
     width: 100%;
     position: absolute;
     object-fit: cover;
+    transition: .3s;
 }
 
 .page3-elem .box-elem .box:hover img{
