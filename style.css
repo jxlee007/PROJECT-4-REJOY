@@ -39,11 +39,146 @@ html,body{
     font-size: 2vw;
 }
 
+#menu{
+    background-color: #ff5f38;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    width: 100%;
+    transition: 0.7s;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 80;
+
+}
+
+#menu span{
+    margin: 1vw 3vw;
+}
+
+#up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#up h2{
+    font-size: 1.6vw;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'headline';
+}
+
+#up h4{
+    font-size: 1.5vw;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+#mid{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20vw;
+    position: relative;
+    padding-bottom: 1vw;
+    border-bottom: 1px solid black;
+}
+
+#mid video{
+    border-radius: 5px;
+    width: 100%;
+}
+
+#play{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 35%;
+}
+
+#play span{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#play h4{
+    font-size: 1.3vw;
+    font-weight: 100;
+    margin-bottom: 45px;
+}
+
+#mid span:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#menuelem{
+    /* margin-bottom: 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: salmon; */
+    position: relative;
+}
+
+.txtdiv{
+    height: 8vh;
+    overflow: hidden;
+    z-index: 12;
+    /* background-color: aqua; */
+}
+
+#menuelem h1{
+    font-size: 3.5vw;
+    font-weight: 300;
+    transition: all ease-out .3s;
+}
+
+#menuelem:hover h1{
+    transform: translateY(-100%);
+}
+
+#mid button{
+    display: block;
+    margin-top: 2vw;
+    border: 1px solid black;
+    font-size: 1.2vw;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: .3s;
+
+}
+
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 -3.25em 0 0 #000;
+  color: #ff5f38;
+}
+
+#low{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .5vw;
+}
+
+#low a{
+    text-decoration: none;
+    color: #000;
+}
+
+
 #page1{
     /* background-color: red; */
     height: 100vh;
     width: 100%;
     position: relative;
+    
 }
 
 #cursor{
@@ -65,6 +200,7 @@ html,body{
     width: 100%;
     object-fit: cover;
     position: absolute;
+    
 }
 
 .page-content{
@@ -98,7 +234,10 @@ nav h3{
 nav h4{
     font-size: 1.3vw;
     font-weight: 300;
+    cursor: pointer;
 }
+
+
 
 .page-content h1 span{
     font-family: headline;

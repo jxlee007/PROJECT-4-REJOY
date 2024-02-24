@@ -141,3 +141,14 @@ loader = () =>{
 
 }
 loader();
+// -------------
+
+openNav = () =>{
+    document.getElementById('menu').style.height = "75vh";
+    console.log('chala')
+}
+
+closeNav = () =>{
+    document.getElementById('menu').style.height = "0";
+    console.log('nai chala')
+}

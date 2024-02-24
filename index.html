@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"/>
 
 </head>
 
@@ -22,13 +23,71 @@
     </div>
 
     <div id="main"><!-- wrapper div -->
+        <div id="menu">
+            <span>
+                <div id="up"> 
+                    <h2>rejouice</h2>
+                    <h4 onclick="closeNav()" >Close</h4>
+                </div>
+                <div id="mid">
+                    <span id="play">
+                        <video loop muted autoplay src="./menu reel.mp4"></video>
+                        <span>
+                            <h4><i class="ri-play-circle-fill"></i>&nbsp;Play reel</h4>
+                            <h4>-01:18</h4>
+                        </span>
+                    </span>
+                    <span>
+                        <div id="menuelem" >
+                            <div class="txtdiv">
+                                <h1>Home</h1>
+                                <h1>Home</h1>
+                            </div>
+                        </div>
+                        <div id="menuelem" >
+                            <div class="txtdiv">
+                                <h1>Work</h1>
+                                <h1>Work</h1>
+                            </div>
+                        </div>
+                        <div id="menuelem" >
+                            <div class="txtdiv">
+                                <h1>Services & Model</h1>
+                                <h1>Services & Model</h1>
+                            </div>
+                        </div>
+                        <div id="menuelem" >
+                            <div class="txtdiv">
+                                <h1>About</h1>
+                                <h1>About</h1>
+                            </div>
+                        </div>
+                        <div id="menuelem" >
+                            <div class="txtdiv">
+                                <h1>Contact</h1>
+                                <h1>Contact</h1>
+                            </div>
+                        </div>
+                        <button class="fill">Take a seat</button>    
+                    </span>
+                </div>
+                <div id="low">
+                    <p>Tomorrow's Brands, Today.<sup>TM</sup></p>
+                    <span>
+                        <a href="">X <i class="ri-arrow-right-up-line"></i></a>
+                        <a href="">Instagram <i class="ri-arrow-right-up-line"></i></a>
+                        <a href="">LinkedIn <i class="ri-arrow-right-up-line"></i></a>
+                    </span>
+                </div>
+            </span>
+        </div>
         <div id="page1">
             <div id="cursor">Play reel</div>
             <video src="./bgv.mp4" loop autoplay muted></video>
             <div class="page-content">
                 <nav>
                     <h3>The Venture Agency.</h3>
-                    <h4>Menu</h4>
+                    <h4 onclick ="openNav()">Menu</h4>
                 </nav>
                 <!-- <h1>rejouice</h1> -->
                 <h1>
