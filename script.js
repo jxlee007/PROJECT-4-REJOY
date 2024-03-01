@@ -144,7 +144,12 @@ loader();
 // -------------
 
 openNav = () =>{
-    document.getElementById('menu').style.height = "70vh";
+    var menu = document.getElementById('menu');
+    if (window.innerWidth <= 768) { // If the window's width is 768px or less
+        menu.style.height = "100vh"; // Set the height to 100vh
+    } else {
+        menu.style.height = "70vh"; // Otherwise, set the height to 70vh
+    }
     document.getElementById('menu').style.zIndex = "70";
     document.getElementById('menu').style.opacity = "1";
 
@@ -154,8 +159,27 @@ closeNav = () =>{
     document.getElementById('menu').style.height = "0";
     document.getElementById('menu').style.opacity = "0";
     document.getElementById('menu').style.zIndex = "0";
-
 }
+
+function updateH4TextOnResize() {
+    var h4 = document.querySelector("#up h4");
+
+    function checkWindowSize() {
+        if (window.innerWidth <= 768) { // 768px is a common breakpoint for mobile screens
+            h4.innerText = "X";
+        } else {
+            h4.innerText = "Close";
+        }
+    }
+
+    // Call checkWindowSize at run time
+    checkWindowSize();
+    // Bind the event to the window
+    window.addEventListener("resize", checkWindowSize);
+}
+
+// Call the function
+updateH4TextOnResize();
 // ---------------
 animpage6 = () =>{
     gsap.from("footer h1 span",{
