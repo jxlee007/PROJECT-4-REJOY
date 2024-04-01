@@ -6,7 +6,7 @@ This repository contains the code for the REJOUICE website, which serves as the 
 ## Key Features
 - **Minimalist Design:** The website adopts a minimalist design approach, ensuring a clean and modern aesthetic.
 - **Video Background:** Engaging video background enhances the visual appeal of the homepage, providing an immersive experience for visitors.
-- **Easy Navigation:** Navigation menu provides straightforward access to essential sections like Home, Work, Services & Model, About, and Contact.
+- **Easy Navigation:** Navigation  provides straightforward access to essential sections like Home, Work, Services & Model, About, and Contact.
 - **Responsive Layout:** The website is responsive, ensuring optimal viewing experience across various devices and screen sizes.
 - **Interactive Elements:** Interactive elements such as play reel option and smooth scrolling enhance user engagement.
 
