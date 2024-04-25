@@ -29,4 +29,4 @@ This repository contains the code for the REJOUICE website, which serves as the 
 
 ## Author
 
-Jagmohan
+[Jagmohan Singh Malhi](https://www.linkedin.com/in/jagmohan-singh-malhi-a67805243/)
